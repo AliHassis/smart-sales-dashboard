@@ -406,11 +406,14 @@ if DATE and SALES and DATE in filtered.columns:
 
     fig_line.update_traces(line_width=2.5, marker_size=8)
     fig_line.update_layout(
-        **CHART_THEME,
-        legend=dict(orientation="h", yanchor="bottom", y=1.02),
-        margin=dict(t=10, b=10, l=0, r=0),
-        height=280,
-    )
+    **CHART_THEME,
+    legend=dict(orientation="h", yanchor="bottom", y=1.02),
+    margin=dict(t=10, b=10, l=0, r=0),
+    height=280,
+    yaxis_title=None,
+    xaxis_title=None,
+)
+
     st.plotly_chart(fig_line, use_container_width=True)
 
 # ── Heatmap المنتج × المنطقة ──────────────────
