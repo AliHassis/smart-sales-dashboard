@@ -430,6 +430,8 @@ if PRODUCT and REGION and SALES and all(c in filtered.columns for c in [PRODUCT,
         **CHART_THEME,
         margin=dict(t=10, b=10, l=0, r=0),
         height=260,
+        yaxis_title=None,
+        xaxis_title=None,
     )
     st.plotly_chart(fig_heat, use_container_width=True)
 
