@@ -440,12 +440,9 @@ if show_raw_data:
 
     with tab1:
         st.dataframe(
-            filtered.style.background_gradient(
-                subset=[SALES] if SALES and SALES in filtered.columns else [],
-                cmap="Blues"
-            ),
-            use_container_width=True,
-            height=320,
+    filtered,
+    use_container_width=True,
+    height=320,
         )
         # تحميل البيانات
         csv_data = filtered.to_csv(index=False).encode("utf-8-sig")
