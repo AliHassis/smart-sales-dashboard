@@ -20,12 +20,6 @@ import anthropic
 # ─────────────────────────────────────────────
 # 1. إعداد الصفحة
 # ─────────────────────────────────────────────
-st.set_page_config(
-    page_title="لوحة تحكم المبيعات الذكية",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 
 st.set_page_config(
@@ -45,9 +39,16 @@ st.markdown("""
   html, body, [class*="css"] {
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
+  
+   
+
+  /* منع RTL على رسوم Plotly */
+  .js-plotly-plot, .plotly, .plot-container {
+    direction: ltr !important;
   }
 
   .main { background: #0a0f1e; }
+
 
   /* بطاقات KPI */
   .kpi-card {
