@@ -39,6 +39,7 @@ st.markdown("""
   html, body, [class*="css"] {
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
+    }
   
    
 
