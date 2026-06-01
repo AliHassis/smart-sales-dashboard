@@ -413,7 +413,7 @@ if DATE and SALES and DATE in filtered.columns:
     height=280,
     yaxis_title=None,
     xaxis_title=None,
-)
+    )
 
     st.plotly_chart(fig_line, use_container_width=True)
 
